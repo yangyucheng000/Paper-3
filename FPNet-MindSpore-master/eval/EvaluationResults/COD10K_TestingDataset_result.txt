@@ -1,0 +1,1 @@
+(Dataset:COD10K_TestingDataset; Model:TEM-NCD-C2F-GroupInsert) Smeasure:0.827; wFmeasure:0.706;MAE:0.033; adpEm:0.880; meanEm:0.888; maxEm:0.901; adpFm:0.716; meanFm:0.742; maxFm:0.762.

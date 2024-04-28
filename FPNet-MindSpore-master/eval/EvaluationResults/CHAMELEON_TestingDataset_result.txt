@@ -1,0 +1,1 @@
+(Dataset:CHAMELEON_TestingDataset; Model:TEM-NCD-C2F-GroupInsert) Smeasure:0.909; wFmeasure:0.852;MAE:0.024; adpEm:0.948; meanEm:0.956; maxEm:0.969; adpFm:0.852; meanFm:0.867; maxFm:0.892.

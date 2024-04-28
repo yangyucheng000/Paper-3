@@ -1,0 +1,66 @@
+# dgx2 (half, 8gpus)
+curl 'http://192.168.204.24/rest-server/api/v1/jobs/adaslim273349' \
+-X 'PUT' \
+-H 'Connection: keep-alive' \
+-H 'Accept: application/json' \
+-H 'DNT: 1' \
+-H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhb2xmIiwidXNlcklkIjoiZjUyYzIyMzAzYTIxM2ZhMDA2OTU2NWJmMmNmNmZmYWQiLCJhZG1pbiI6ZmFsc2UsIm9yZ0lkIjoidmM4YTRwNHJnejAiLCJ1YyI6eyJ1c2VySWQiOjExMCwiYWNjZXNzVG9rZW4iOnsiYWNjZXNzX3Rva2VuIjoiMjhmYmFlYTQwOWE5YzllMDE4ZjUwMTFkZTZjNGZiMGMiLCJyZWZyZXNoX3Rva2VuIjoiZTY1MTRiNGU4YWMxMDMwNjhhZGZkMWQ4YjE3OTYzM2YiLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwiZXhwaXJlc19pbiI6LTEwMDAsImV4cGlyZXNfYXQiOjE2NDUwMDk0NDIxOTl9fSwiaWF0IjoxNjQ1MDA5NzQzLCJleHAiOjE2NDU2MTQ1NDN9.KcQEJ6wBXeJNXuW9tmaR9lXfEf76q3ymt5gyEczCA9c' \
+-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36' \
+-H 'Content-Type: application/json' \
+-H 'Origin: http://192.168.204.24' \
+-H 'Referer: http://192.168.204.24/' \
+-H 'Accept-Language: zh-CN' \
+--data-raw '{"jobName":"adaslim273349","gpuType":"dgx2","image":"dockerhub.pcl.ac.cn:5000/user-images/taolf:torch17_cu101_py38_apex","retryCount":0,"isPreempt":false,"taskRoles":[{"name":"p1","taskNumber":1,"minSucceededTaskCount":1,"minFailedTaskCount":1,"cpuNumber":32,"gpuNumber":8,"memoryMB":524288,"shmMB":262144,"fpgaNumber":0,"mluNumber":0,"command":"cd /userhome && bash sys4.sh","needIBDevice":false,"isMainRole":false,"useNNI":false}],"volumes":[]}' \
+--compressed \
+--insecure
+
+# dgx2 (1/4, 4gpus)
+curl 'http://192.168.204.24/rest-server/api/v1/jobs/adaslim341618' \
+-X 'PUT' \
+-H 'Connection: keep-alive' \
+-H 'Accept: application/json' \
+-H 'DNT: 1' \
+-H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhb2xmIiwidXNlcklkIjoiZjUyYzIyMzAzYTIxM2ZhMDA2OTU2NWJmMmNmNmZmYWQiLCJhZG1pbiI6ZmFsc2UsIm9yZ0lkIjoidmM4YTRwNHJnejAiLCJ1YyI6eyJ1c2VySWQiOjExMCwiYWNjZXNzVG9rZW4iOnsiYWNjZXNzX3Rva2VuIjoiMjhmYmFlYTQwOWE5YzllMDE4ZjUwMTFkZTZjNGZiMGMiLCJyZWZyZXNoX3Rva2VuIjoiZTY1MTRiNGU4YWMxMDMwNjhhZGZkMWQ4YjE3OTYzM2YiLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwiZXhwaXJlc19pbiI6LTEwMDAsImV4cGlyZXNfYXQiOjE2NDg4ODYwOTM2MzN9fSwiaWF0IjoxNjQ4ODg2Mzk0LCJleHAiOjE2NDk0OTExOTR9.ig2ewroRwXD0DtTw3D1iGXDZg525-kJ1rFr9hIx2vsM' \
+-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36' \
+-H 'Content-Type: application/json' \
+-H 'Origin: http://192.168.204.24' \
+-H 'Referer: http://192.168.204.24/' \
+-H 'Accept-Language: zh-CN' \
+--data-raw '{"jobName":"adaslim341618","gpuType":"dgx2","image":"dockerhub.pcl.ac.cn:5000/user-images/taolf:torch17_cu101_py38_apex","retryCount":0,"isPreempt":false,"taskRoles":[{"name":"p1","taskNumber":1,"minSucceededTaskCount":1,"minFailedTaskCount":1,"cpuNumber":16,"gpuNumber":4,"memoryMB":65536,"shmMB":65536,"fpgaNumber":0,"mluNumber":0,"command":"cd /userhome && bash sys.sh","needIBDevice":false,"isMainRole":false,"useNNI":false}],"volumes":[]}' \
+--compressed \
+--insecure
+
+# dgx2 (1/4, 4gpus)
+curl 'http://192.168.204.24/rest-server/api/v1/jobs/adaslim846689' \
+-X 'PUT' \
+-H 'Connection: keep-alive' \
+-H 'Accept: application/json' \
+-H 'DNT: 1' \
+-H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhb2xmIiwidXNlcklkIjoiZjUyYzIyMzAzYTIxM2ZhMDA2OTU2NWJmMmNmNmZmYWQiLCJhZG1pbiI6ZmFsc2UsIm9yZ0lkIjoidmM4YTRwNHJnejAiLCJ1YyI6eyJ1c2VySWQiOjExMCwiYWNjZXNzVG9rZW4iOnsiYWNjZXNzX3Rva2VuIjoiMjhmYmFlYTQwOWE5YzllMDE4ZjUwMTFkZTZjNGZiMGMiLCJyZWZyZXNoX3Rva2VuIjoiZTY1MTRiNGU4YWMxMDMwNjhhZGZkMWQ4YjE3OTYzM2YiLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwiZXhwaXJlc19pbiI6LTEwMDAsImV4cGlyZXNfYXQiOjE2NDc2MTY1NTU0NzJ9fSwiaWF0IjoxNjQ3NjE2ODU2LCJleHAiOjE2NDgyMjE2NTZ9.BUJj5fTIQeHb8QvSnpgr-HIvs65c9noVn3RhNdlp3-w' \
+-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36' \
+-H 'Content-Type: application/json' \
+-H 'Origin: http://192.168.204.24' \
+-H 'Referer: http://192.168.204.24/' \
+-H 'Accept-Language: zh-CN' \
+--data-raw '{"jobName":"adaslim846689","gpuType":"dgx2","image":"dockerhub.pcl.ac.cn:5000/user-images/taolf:torch17_cu101_py38_apex","retryCount":0,"isPreempt":false,"taskRoles":[{"name":"p2","taskNumber":1,"minSucceededTaskCount":1,"minFailedTaskCount":1,"cpuNumber":32,"gpuNumber":8,"memoryMB":131072,"shmMB":131072,"fpgaNumber":0,"mluNumber":0,"command":"cd /userhome && bash sys.sh","needIBDevice":false,"isMainRole":false,"useNNI":false}],"volumes":[]}' \
+--compressed \
+--insecure
+
+# dgx1 (1 gpu)
+curl 'http://192.168.204.24/rest-server/api/v1/jobs/writing893614' \
+-X 'PUT' \
+-H 'Connection: keep-alive' \
+-H 'Accept: application/json' \
+-H 'DNT: 1' \
+-H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhb2xmIiwidXNlcklkIjoiZjUyYzIyMzAzYTIxM2ZhMDA2OTU2NWJmMmNmNmZmYWQiLCJhZG1pbiI6ZmFsc2UsIm9yZ0lkIjoidmM4YTRwNHJnejAiLCJ1YyI6eyJ1c2VySWQiOjExMCwiYWNjZXNzVG9rZW4iOnsiYWNjZXNzX3Rva2VuIjoiMjhmYmFlYTQwOWE5YzllMDE4ZjUwMTFkZTZjNGZiMGMiLCJyZWZyZXNoX3Rva2VuIjoiZTY1MTRiNGU4YWMxMDMwNjhhZGZkMWQ4YjE3OTYzM2YiLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwiZXhwaXJlc19pbiI6LTEwMDAsImV4cGlyZXNfYXQiOjE2NDY5NjY5NDQyMDR9fSwiaWF0IjoxNjQ2OTY3MjQ1LCJleHAiOjE2NDc1NzIwNDV9.xsB1eZtLfEn4IivPFKGHEPlv_tDINc0OUa_zzaHqmLo' \
+-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36' \
+-H 'Content-Type: application/json' \
+-H 'Origin: http://192.168.204.24' \
+-H 'Referer: http://192.168.204.24/' \
+-H 'Accept-Language: zh-CN' \
+--data-raw '{"jobName":"writing893614","gpuType":"dgx1","image":"dockerhub.pcl.ac.cn:5000/user-images/taolf:torch17_cu101_py38_apex","retryCount":0,"isPreempt":false,"taskRoles":[{"name":"p0","taskNumber":1,"minSucceededTaskCount":1,"minFailedTaskCount":1,"cpuNumber":4,"gpuNumber":1,"memoryMB":16384,"shmMB":16384,"fpgaNumber":0,"mluNumber":0,"command":"cd /userhome && bash sys4.sh","needIBDevice":false,"isMainRole":false,"useNNI":false}],"volumes":[]}' \
+--compressed \
+--insecure
+
+
+cd /userhome && bash sys.sh

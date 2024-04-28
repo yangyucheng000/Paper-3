@@ -1,0 +1,1 @@
+(Dataset:CAMO_TestingDataset; Model:TEM-NCD-C2F-GroupInsert) Smeasure:0.808; wFmeasure:0.729;MAE:0.077; adpEm:0.868; meanEm:0.854; maxEm:0.868; adpFm:0.779; meanFm:0.772; maxFm:0.783.
